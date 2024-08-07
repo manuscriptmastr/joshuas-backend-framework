@@ -1,6 +1,10 @@
 # Joshua's Backend Framework
 
-This is a little experiment to make a [NestJS](https://nestjs.com/)-like backend framework using [native JavaScript decorators](https://github.com/tc39/proposal-decorators). There's a lot of half-baked ideas here.
+This is a little experiment to make a [NestJS](https://nestjs.com/)-like backend framework using [native JavaScript decorators](https://github.com/tc39/proposal-decorators). There's a lot of half-baked ideas here, but the implementation supports:
+
+- Routing with Regex/string pattern matching and [named capture groups](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Named_capturing_group)
+- Half-baked dependency injection. I still haven't figured out how to use `@inject` on a private field.
+- Middleware-like universal interface with `(req, res) => ...`
 
 Things I've learned while implementing this:
 
